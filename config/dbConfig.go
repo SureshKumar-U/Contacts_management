@@ -85,6 +85,8 @@ func CreateContactsTable() error {
 		FOREIGN KEY (user_id) REFERENCES userdetails(id)
 	)`
 	_, err = Db.Exec(query)
+	
+    
 
 	if err != nil {
 		return err
