@@ -94,5 +94,4 @@ func CreateContactsTable() error {
 	}
 
 	return nil
-
 }

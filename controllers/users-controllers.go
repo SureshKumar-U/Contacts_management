@@ -1,15 +1,22 @@
-package Controllers
+package controllers
 
 import (
+	"net/http"
+
 	"github.com/SureshKumar-U/Contacts_management/models"
 	"github.com/SureshKumar-U/Contacts_management/utils"
-	"net/http"
 )
 
 func RegisterUser(w http.ResponseWriter, r *http.Request) {
 
 	var user models.User
 	utils.ParseBody(r, user)
+	// ok := user.GetUserByEmail()
+	// if ok {
+	// 	ret
+
+	// }
+
 }
 func Loginuser(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("loginuser"))

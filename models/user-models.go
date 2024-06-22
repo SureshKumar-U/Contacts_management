@@ -17,3 +17,12 @@ type Contacts struct {
 func (u *User) CreateUser() *User {
 	return &User{}
 }
+
+// func (u *User) ExistedUser() bool {
+// 	query := "select email from userdetails where email= ?"
+// 	row := config.Db.QueryRow(query, u.Email)
+// 	if err := row.Scan(&email); err != sql.ErrNoRows { // if now rows found with email
+// 		return false
+// 	}
+// 	return true
+// }
